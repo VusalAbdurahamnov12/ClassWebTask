@@ -12,8 +12,15 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\Administrator\Desktop\class\studio\pustok\pustok\Views\_ViewImports.cshtml"
+using pustok.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c30e80a002c05919a637781329403032d56e5a8c", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"57218c316b6921e2cd61027a2387edc31a2d9471", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"18930a2f1ba0bdb1c0379b6a217e3e014d868f16", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -29,9 +36,10 @@ namespace AspNetCore
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_8 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/image/logo.png"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_9 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString(""), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_10 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/image/products/cart-product-1.jpg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_11 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/plugins.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_12 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/ajax-mail.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_13 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/custom.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_11 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("https://demo.hasthemes.com/pustok-preview/pustok/php/mail.php"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_12 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/plugins.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_13 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/ajax-mail.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_14 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/js/custom.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -55,11 +63,13 @@ namespace AspNetCore
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"zxx\">\r\n\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c8057", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c8928", async() => {
                 WriteLiteral(@"
     <meta charset=""utf-8"" />
     <meta http-equiv=""X-UA-Compatible"" content=""IE=edge"">
@@ -67,7 +77,7 @@ namespace AspNetCore
     <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
     <!-- Use Minified Plugins Version For Fast Page Load -->
     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c30e80a002c05919a637781329403032d56e5a8c8607", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c30e80a002c05919a637781329403032d56e5a8c9478", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -84,7 +94,7 @@ namespace AspNetCore
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c30e80a002c05919a637781329403032d56e5a8c9959", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c30e80a002c05919a637781329403032d56e5a8c10830", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +111,7 @@ namespace AspNetCore
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c11311", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c12183", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -129,7 +139,7 @@ namespace AspNetCore
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c13286", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c14158", async() => {
                 WriteLiteral(@"
     <div class=""site-wrapper"" id=""top"">
         <div class=""site-header d-none d-lg-block"">
@@ -139,7 +149,7 @@ namespace AspNetCore
                         <div class=""col-lg-3 "">
                             <a href=""index.html"" class=""site-brand"">
                                 ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c13961", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c14833", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -455,7 +465,7 @@ namespace AspNetCore
                                                 <div class=""cart-product"">
                                                     <a href=""product-details.html"" class=""image"">
                                                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c37516", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c38388", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -504,7 +514,7 @@ namespace AspNetCore
                     <div class=""row align-items-sm-end align-items-center"">
                         <div class=""col-");
                 WriteLiteral("md-4 col-7\">\r\n                            <a href=\"index.html\" class=\"site-brand\">\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c40972", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c41844", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -665,12 +675,24 @@ namespace AspNetCore
                 <div class=""off-canvas-inner"">
                     <!-- search box start -->
                     <div class=""search-box offcanvas"">
-                        <form>
-                            <input type=""text"" placeholder=""Search Here"">
-                            <button class=""search-btn""><i class=""ion-ios-search-strong""></i></button>
-                        </form>
-      ");
-                WriteLiteral(@"              </div>
+                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c53569", async() => {
+                    WriteLiteral("\r\n                            <input type=\"text\" placeholder=\"Search Here\">\r\n                            <button class=\"search-btn\"><i class=\"ion-ios-search-strong\"></i></button>\r\n                        ");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral(@"
+                    </div>
                     <!-- search box end -->
                     <!-- mobile menu start -->
                     <div class=""mobile-navigation"">
@@ -685,9 +707,9 @@ namespace AspNetCore
                                         <li> <a href=""index-3.html"">Home Three</a></li>
                                         <li> <a href=""index-4.html"">Home Four</a></li>
                                         <li> <a href=""index-5.html"">Home Five</a></li>
-                                    </ul>
-  ");
-                WriteLiteral(@"                              </li>
+                                    <");
+                WriteLiteral(@"/ul>
+                                </li>
                                 <li class=""menu-item-has-children"">
                                     <a href=""#"">Blog</a>
                                     <ul class=""sub-menu"">
@@ -701,8 +723,8 @@ namespace AspNetCore
                                         </li>
                                         <li class=""menu-item-has-children"">
                                             <a href=""#"">Blog List</a>
-                    ");
-                WriteLiteral(@"                        <ul class=""sub-menu"">
+            ");
+                WriteLiteral(@"                                <ul class=""sub-menu"">
                                                 <li><a href=""blog-list.html"">Full Widh (Default)</a></li>
                                                 <li><a href=""blog-list-left-sidebar.html"">left Sidebar</a></li>
                                                 <li><a href=""blog-list-right-sidebar.html"">Right Sidebar</a></li>
@@ -713,8 +735,8 @@ namespace AspNetCore
                                             <ul class=""sub-menu"">
                                                 <li><a href=""blog-details.html"">Image Format (Default)</a></li>
                                                 <li><a href=""blog-details-gallery.html"">Gallery Format</a></li>
-                                                <li><a href=""blog-details-audio.html"">Audio Format</");
-                WriteLiteral(@"a></li>
+                                                <li><a href=""blog-details-audio.html"">Audio ");
+                WriteLiteral(@"Format</a></li>
                                                 <li><a href=""blog-details-video.html"">Video Format</a></li>
                                                 <li><a href=""blog-details-left-sidebar.html"">left Sidebar</a></li>
                                             </ul>
@@ -728,8 +750,8 @@ namespace AspNetCore
                                             <a href=""#"">Shop Grid</a>
                                             <ul class=""sub-menu"">
                                                 <li><a href=""shop-grid.html"">Fullwidth</a></li>
-                                                <li><a href=""shop-grid-left-sidebar.html"">left Sidebar</a></li>");
-                WriteLiteral(@"
+                                                <li><a href=""shop-grid-left-sidebar.html"">left Sidebar</");
+                WriteLiteral(@"a></li>
                                                 <li><a href=""shop-grid-right-sidebar.html"">Right Sidebar</a></li>
                                             </ul>
                                         </li>
@@ -743,8 +765,8 @@ namespace AspNetCore
                                         </li>
                                         <li class=""menu-item-has-children"">
                                             <a href=""#"">Product Details 1</a>
-                ");
-                WriteLiteral(@"                            <ul class=""sub-menu"">
+        ");
+                WriteLiteral(@"                                    <ul class=""sub-menu"">
                                                 <li><a href=""product-details.html"">Product Details Page</a></li>
                                                 <li><a href=""product-details-affiliate.html"">Product Details
                                                         Affiliate</a></li>
@@ -756,8 +778,8 @@ namespace AspNetCore
                                         <li class=""menu-item-has-children"">
                                             <a href=""#"">Product Details 2</a>
                                             <ul class=""sub-menu"">
-                                              ");
-                WriteLiteral(@"  <li><a href=""product-details-left-thumbnail.html"">left Thumbnail</a>
+                                      ");
+                WriteLiteral(@"          <li><a href=""product-details-left-thumbnail.html"">left Thumbnail</a>
                                                 </li>
                                                 <li><a href=""product-details-right-thumbnail.html"">Right Thumbnail</a>
                                                 </li>
@@ -771,8 +793,8 @@ namespace AspNetCore
                                     <a href=""#"">Pages</a>
                                     <ul class=""sub-menu"">
                                         <li><a href=""cart.html"">Cart</a></li>
-                                    ");
-                WriteLiteral(@"    <li><a href=""checkout.html"">Checkout</a></li>
+                            ");
+                WriteLiteral(@"            <li><a href=""checkout.html"">Checkout</a></li>
                                         <li><a href=""compare.html"">Compare</a></li>
                                         <li><a href=""wishlist.html"">Wishlist</a></li>
                                         <li><a href=""login-register.html"">Login Register</a></li>
@@ -787,8 +809,8 @@ namespace AspNetCore
                         </nav>
                         <!-- mobile menu navigation end -->
                     </div>
-                    <!-- mobil");
-                WriteLiteral(@"e menu end -->
+                    <!");
+                WriteLiteral(@"-- mobile menu end -->
                     <nav class=""off-canvas-nav"">
                         <ul class=""mobile-menu menu-block-2"">
                             <li class=""menu-item-has-children"">
@@ -805,8 +827,8 @@ namespace AspNetCore
                                     <li>Ban</li>
                                 </ul>
                             </li>
-                            <li class=""menu-item-has-chi");
-                WriteLiteral(@"ldren"">
+                            <li class=""menu-item");
+                WriteLiteral(@"-has-children"">
                                 <a href=""#"">My Account <i class=""fas fa-angle-down""></i></a>
                                 <ul class=""sub-menu"">
                                     <li><a href=""#"">My Account</a></li>
@@ -822,9 +844,9 @@ namespace AspNetCore
                             <a href=""#"" class=""sin-contact""><i class=""fas fa-mobile-alt""></i>(12345) 78790220</a>
                             <a href=""#"" class=""sin-contact""><i class=""fas fa-envelope""></i>examle@handart.com</a>
                         </div>
-                        <div class=""off-canvas-social"">
-      ");
-                WriteLiteral(@"                      <a href=""#"" class=""single-icon""><i class=""fab fa-facebook-f""></i></a>
+                        <div class=""off-canvas-social"">");
+                WriteLiteral(@"
+                            <a href=""#"" class=""single-icon""><i class=""fab fa-facebook-f""></i></a>
                             <a href=""#"" class=""single-icon""><i class=""fab fa-twitter""></i></a>
                             <a href=""#"" class=""single-icon""><i class=""fas fa-rss""></i></a>
                             <a href=""#"" class=""single-icon""><i class=""fab fa-youtube""></i></a>
@@ -840,9 +862,9 @@ namespace AspNetCore
             <div class=""container d-none d-lg-block"">
                 <div class=""row align-items-center"">
                     <div class=""col-lg-4"">
-                        <a href=""index.html"" class=""site-brand"">");
-                WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c64915", async() => {
+                        <a href=""index.html"" class=""site");
+                WriteLiteral("-brand\">\r\n                            ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c30e80a002c05919a637781329403032d56e5a8c67033", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1250,18 +1272,31 @@ namespace AspNetCore
                         <h3>Newsletter Subscribe</h3>
                     </div>
                     <div class=""newsletter-form mb--30"">
-                        <form action=""https://demo.hasthemes.com/pustok-preview/pustok/php/mail.php"">
-                            <input type=""email"" class=""form-control"" placeholder=""Enter Your Email Address Here..."">
-                            <button class=""btn btn--primary w-100"">Subscribe</button>
-                        </form>
+                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c95350", async() => {
+                    WriteLiteral("\r\n                            <input type=\"email\" class=\"form-control\" placeholder=\"Enter Your Email Address Here...\">\r\n                            <button class=\"btn btn--primary w-100\">Subscribe</button>\r\n                        ");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_11);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral(@"
                     </div>
                     <div class=""social-block"">
                         <h3 class=""title"">STAY CONNECTED</h3>
                         <ul class=""social-list list-inline"">
                             <li class=""single-social facebook""><a href=""#""><i class=""ion ion-social-facebook""></i></a>
                             </li>
-                            <li class=""single-social twitter""><a href=""#""><i class=""ion ion-");
-                WriteLiteral(@"social-twitter""></i></a></li>
+                            <li class=""single-social twitter""><a href=""#""><i class=""ion ion-social-twitter""></i></a></li>
                             <li class=""single-social google""><a href=""#""><i
                                         class=""ion ion-social-googleplus-outline""></i></a></li>
                             <li class=""single-social youtube""><a href=""#""><i class=""ion ion-social-youtube""></i></a></li>
@@ -1272,11 +1307,8 @@ namespace AspNetCore
         </div>
         <div class=""footer-bottom"">
             <div class=""container"">
-                <p class=""copyright-heading"">Suspendisse in auctor augue. Cras fermentum est ac fermentum tempor. Etiam
-                    vel
-                    magna volutpat, posuere eros</p>
-                <a href=""#"" class=""payment-block"">
-                    <img src=""image/icon/payment.png""");
+                <p class=""copyright-heading"">Suspendi");
+                WriteLiteral("sse in auctor augue. Cras fermentum est ac fermentum tempor. Etiam\r\n                    vel\r\n                    magna volutpat, posuere eros</p>\r\n                <a href=\"#\" class=\"payment-block\">\r\n                    <img src=\"image/icon/payment.png\"");
                 BeginWriteAttribute("alt", " alt=\"", 70618, "\"", 70624, 0);
                 EndWriteAttribute();
                 WriteLiteral(@">
@@ -1289,21 +1321,7 @@ namespace AspNetCore
     </footer>
     <!-- Use Minified Plugins Version For Fast Page Load -->
     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c95399", async() => {
-                }
-                );
-                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
-                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_11);
-                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-                if (!__tagHelperExecutionContext.Output.IsContentModified)
-                {
-                    await __tagHelperExecutionContext.SetOutputContentAsync();
-                }
-                Write(__tagHelperExecutionContext.Output);
-                __tagHelperExecutionContext = __tagHelperScopeManager.End();
-                WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c96500", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c98821", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -1317,12 +1335,26 @@ namespace AspNetCore
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c97601", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c99922", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
                 __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
                 __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_13);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral("\r\n    ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c30e80a002c05919a637781329403032d56e5a8c101023", async() => {
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_14);
                 await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
                 if (!__tagHelperExecutionContext.Output.IsContentModified)
                 {
