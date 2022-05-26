@@ -8481,11 +8481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\class\\studio\\pustok\\pustok\\pustok.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\New folder\\ClassWebTask\\studio\\pustok\\pustok\\pustok.csproj",
       "projectName": "pustok",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\class\\studio\\pustok\\pustok\\pustok.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\New folder\\ClassWebTask\\studio\\pustok\\pustok\\pustok.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\class\\studio\\pustok\\pustok\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\New folder\\ClassWebTask\\studio\\pustok\\pustok\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

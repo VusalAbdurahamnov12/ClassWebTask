@@ -1,0 +1,42 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="container-fluid">
+    <form method="post" >
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="SliderTitle1"></label>
+                <input asp-for="SliderTitle1" class="form-control" placeholder="Title1">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="SliderTitle2"></label>
+                <input asp-for="SliderTitle2" class="form-control" placeholder="Title2">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control" placeholder="SubTitle">
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="RedirectUrl"></label>
+                <input asp-for="RedirectUrl" class="form-control" placeholder="RedirectUrl">
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="RedirectUrlText"></label>
+                <input asp-for="RedirectUrlText" class="form-control" placeholder="RedirectUrlText">
+            </div>
+                        <div class="form-group col-md-4">
+                <label asp-for="Image"></label>
+                <input asp-for="Image" class="form-control" placeholder="Image">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Update</button>
+        </div>
+    </form>
+</div>
+

@@ -1,4 +1,7 @@
 ﻿@model List<Slider>
+@{
+    int count = 0;
+}
         <!--=================================
         Hero Area
         ===================================== -->
@@ -14,7 +17,7 @@
 
                                 @foreach (var item in Model)
                                {
-            int count = 0;
+            
             count++;
             if (count%2==0)
                                   {
